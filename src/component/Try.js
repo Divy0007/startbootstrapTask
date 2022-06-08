@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import {
   Nav,
+  NavbarBrand,
   NavbarToggler,
   Collapse,
   NavItem,
   NavLink,
   Navbar,
 } from "reactstrap";
-import "./navbar.scss";
 
-const NavMenu = () => {
+const Try = () => {
   const [responsive, setResponsive] = useState(false);
 
   return (
     <div>
-      <Navbar color="dark" dark expand="md" fixed="top" className="py-4">
-        <NavLink className="fw-bold text-white fs-3">START BOOTSTRAP</NavLink>
+      <Navbar color="dark" dark expand="md">
+        <NavbarBrand href="/">reactstrap</NavbarBrand>
         <NavbarToggler
           onClick={function noRefCheck() {
             setResponsive(!responsive);
@@ -24,18 +24,14 @@ const NavMenu = () => {
         <Collapse navbar className={responsive ? "show" : ""}>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="/components/" className="fw-bold text-white fs-5">
-                Components
-              </NavLink>
+              <NavLink href="/components/">Components</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/" className="fw-bold text-white fs-5">
-                Components
-              </NavLink>
+              <NavLink href="/components/">Components</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/" className="fw-bold text-white fs-5">
-                Components
+              <NavLink href="https://github.com/reactstrap/reactstrap">
+                GitHub
               </NavLink>
             </NavItem>
           </Nav>
@@ -45,4 +41,4 @@ const NavMenu = () => {
   );
 };
 
-export default NavMenu;
+export default Try;

@@ -1,5 +1,11 @@
-/* @import "../node_modules/reactstrap/dist/" */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "./component/navbar.scss";
+@import "./component/startBootstrap.scss";
+@import "./component/portfolio.scss";
+@import "./component/about.scss";
+@import "./component/contactMe.scss";
 
+/* @import "../node_modules/reactstrap/dist/" */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
