@@ -23,7 +23,7 @@ const ModalPortfolio = ({ modal, toggle, url }) => {
         </div>
         <img src={url} alt="" className="m-5 rounded-5 mb-4 w-75 mx-auto" />
         <ModalBody>
-          <p className="mx-5 px-5 text-center">
+          <p className="mx-md-5 px-5 text-center">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi
