@@ -15,7 +15,7 @@ const NavMenu = () => {
   return (
     <div>
       <Navbar color="dark" dark expand="md" fixed="top" className="py-4">
-        <NavLink className="fw-bold text-white fs-3">START BOOTSTRAP</NavLink>
+        <p className="fw-bold text-white fs-3">START BOOTSTRAP</p>
         <NavbarToggler
           onClick={function noRefCheck() {
             setResponsive(!responsive);
@@ -24,19 +24,30 @@ const NavMenu = () => {
         <Collapse navbar className={responsive ? "show" : ""}>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="/components/" className="fw-bold text-white fs-5">
-                Components
-              </NavLink>
+              <a
+                className="nav-link"
+                href="#startBootstrap"
+                className="fw-bold text-white fs-6 text-decoration-none mx-2"
+              >
+                PORTFOLIO
+              </a>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/" className="fw-bold text-white fs-5">
-                Components
-              </NavLink>
+              <a
+                className="nav-link"
+                href="#about"
+                className="fw-bold text-white fs-6 text-decoration-none mx-2"
+              >
+                ABOUT
+              </a>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/" className="fw-bold text-white fs-5">
-                Components
-              </NavLink>
+              <a
+                href="#contact"
+                className="fw-bold text-white fs-6 text-decoration-none mx-2"
+              >
+                CONTACT
+              </a>
             </NavItem>
           </Nav>
         </Collapse>

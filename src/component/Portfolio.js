@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsFillStarFill } from "react-icons/bs";
 import "../component/portfolio.scss";
+import { FaPlus } from "react-icons/fa";
+import ModalPortfolio from "./ModalPortfolio.js";
 
 const Portfolio = () => {
+  const [modal, setModal] = useState(false);
+  const [iteam, setIteam] = useState("");
+
+  const toggle = () => {
+    setModal(!modal);
+  };
+
   const img = [
     "https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png",
 
@@ -30,15 +39,29 @@ const Portfolio = () => {
 
       <div className="row mx-auto mt-3 justify-content-center">
         {img.map((iteam, index) => (
-          <div className="col-md-6 col-lg-4 " key={index}>
-            <img
-              src={iteam}
-              alt=""
-              className="img-fluid rounded-3 m-3 d-block mx-auto"
-            />
+          <div className="col-md-6 col-lg-4" key={index}>
+            <div className="main-div">
+              <img
+                src={iteam}
+                alt=""
+                className="img-fluid rounded-4 m-3 d-block mx-auto "
+              />
+              <div
+                className="overlay rounded-4"
+                onClick={() => {
+                  toggle();
+                  setIteam(iteam);
+                }}
+              >
+                <FaPlus color="white" size={65} />
+              </div>
+            </div>
           </div>
         ))}
+        <ModalPortfolio modal={modal} toggle={toggle} url={iteam} />;
       </div>
+
+      {/* modal */}
     </div>
   );
 };

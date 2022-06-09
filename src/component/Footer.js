@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./footer.scss";
 import {
   FaDribbble,
@@ -9,24 +9,31 @@ import {
 
 const Footer = () => {
   return (
-    <div className="footer">
+    // <p>hello</p>
+    <div className="footer mx-0">
       <div className="row justify-content-md-center">
-        <div className="col-md-3 m-4 mt-5 ">
+        <div className="col-12 col-lg-3 m-md-4 mt-5 ">
           <p className="text-center fw-bold fs-5">LOCATION</p>
           <p className="text-center">2215 John Daniel Drive Clark, MO 65243</p>
         </div>
-        <div className="col-md-auto m-4 mt-5 ">
+        <div className="col-12  col-lg-auto m-md-4 mt-5 ">
           <p className="text-center fw-bold fs-5">AROUND THE WEB</p>
-          <p className="text-center">
-            <span className="border rounded-circle">
-              <FaFacebookF className="m-2" size="20" />
+          <p className="text-center d-flex justify-content-center">
+            <span className="icon">
+              <FaFacebookF className="" size="20" color="color" />
             </span>
-            <FaTwitter className="m-2" size="20" />
-            <FaLinkedinIn className="m-2" size="20" />
-            <FaDribbble className="m-2" size="20" />
+            <span className="icon">
+              <FaTwitter className="" size="20" />
+            </span>
+            <span className="icon">
+              <FaLinkedinIn className="" size="20" />
+            </span>
+            <span className="icon">
+              <FaDribbble className="" size="20" />
+            </span>
           </p>
         </div>
-        <div className="col-md-3 m-4 mt-5">
+        <div className="col-12 col-lg-3 m-md-4 mt-5">
           <p className="text-center fw-bold fs-5">ABOUT FREELANCER</p>
           <p className="text-center">
             Freelance is a free to use, MIT licensed Bootstrap theme created by

@@ -5,7 +5,15 @@ import "../component/about.scss";
 
 const About = () => {
   return (
-    <div className="about py-5">
+    <div
+      className="about py-5 mx-0"
+      id="about"
+      data-bs-spy="scroll"
+      data-bs-target="#about"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      tabIndex="0"
+    >
       <p className="fw-normal display-3 pt-3 mb-1 text-center text-white">
         ABOUT
       </p>

@@ -1,8 +1,5 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "./component/navbar.scss";
-@import "./component/startBootstrap.scss";
-@import "./component/portfolio.scss";
-@import "./component/about.scss";
 @import "./component/contactMe.scss";
 
 /* @import "../node_modules/reactstrap/dist/" */
@@ -14,6 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
+  overflow-x: hidden;
 }
 
 code {
@@ -23,4 +21,9 @@ code {
 
 * {
   box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
